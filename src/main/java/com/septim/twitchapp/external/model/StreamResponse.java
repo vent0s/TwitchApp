@@ -1,4 +1,6 @@
 package com.septim.twitchapp.external.model;
 
-public record StreamResponse() {
+import java.util.List;
+
+public record StreamResponse(List<Stream> data) {
 }

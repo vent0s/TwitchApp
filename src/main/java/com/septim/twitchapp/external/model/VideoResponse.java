@@ -1,4 +1,6 @@
 package com.septim.twitchapp.external.model;
 
-public record VideoResponse() {
+import java.util.List;
+
+public record VideoResponse(List<Video> data) {
 }
