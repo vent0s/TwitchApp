@@ -1,0 +1,104 @@
+2023-01-18T00:29:29.926-08:00  INFO 19632 --- [main] c.septim.twitchapp.TwitchAppApplication  : Starting TwitchAppApplication using Java 17.0.5 with PID 19632 (C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp\build\classes\java\main started by x412j in C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp)
+2023-01-18T00:29:29.939-08:00  INFO 19632 --- [main] c.septim.twitchapp.TwitchAppApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-01-18T00:29:30.231-08:00  WARN 19632 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'twitchAppApplication' defined in class path resource [com/septim/twitchapp/AppConfig.class]: @Bean definition illegally overridden by existing bean definition: Generic bean: class [com.septim.twitchapp.TwitchAppApplication]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null
+2023-01-18T00:29:30.241-08:00  INFO 19632 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-01-18T00:29:30.265-08:00 ERROR 19632 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'twitchAppApplication' defined in class path resource [com/septim/twitchapp/AppConfig.class]: @Bean definition illegally overridden by existing bean definition: Generic bean: class [com.septim.twitchapp.TwitchAppApplication]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.isOverriddenByExistingDefinition(ConfigurationClassBeanDefinitionReader.java:319) ~[spring-context-6.0.3.jar:6.0.3]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:204) ~[spring-context-6.0.3.jar:6.0.3]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:144) ~[spring-context-6.0.3.jar:6.0.3]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120) ~[spring-context-6.0.3.jar:6.0.3]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:410) ~[spring-context-6.0.3.jar:6.0.3]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:283) ~[spring-context-6.0.3.jar:6.0.3]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:344) ~[spring-context-6.0.3.jar:6.0.3]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:115) ~[spring-context-6.0.3.jar:6.0.3]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:745) ~[spring-context-6.0.3.jar:6.0.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:565) ~[spring-context-6.0.3.jar:6.0.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.1.jar:3.0.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-3.0.1.jar:3.0.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432) ~[spring-boot-3.0.1.jar:3.0.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-3.0.1.jar:3.0.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) ~[spring-boot-3.0.1.jar:3.0.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291) ~[spring-boot-3.0.1.jar:3.0.1]
+	at com.septim.twitchapp.TwitchAppApplication.main(TwitchAppApplication.java:10) ~[main/:na]
+
+2023-01-18T00:34:06.850-08:00  INFO 28624 --- [main] c.septim.twitchapp.TwitchAppApplication  : Starting TwitchAppApplication using Java 17.0.5 with PID 28624 (C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp\build\classes\java\main started by x412j in C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp)
+2023-01-18T00:34:06.852-08:00  INFO 28624 --- [main] c.septim.twitchapp.TwitchAppApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-01-18T00:34:07.097-08:00  WARN 28624 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'twitchAppApplication' defined in class path resource [com/septim/twitchapp/AppConfig.class]: @Bean definition illegally overridden by existing bean definition: Generic bean: class [com.septim.twitchapp.TwitchAppApplication]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null
+2023-01-18T00:34:07.103-08:00  INFO 28624 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-01-18T00:34:07.118-08:00 ERROR 28624 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'twitchAppApplication' defined in class path resource [com/septim/twitchapp/AppConfig.class]: @Bean definition illegally overridden by existing bean definition: Generic bean: class [com.septim.twitchapp.TwitchAppApplication]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.isOverriddenByExistingDefinition(ConfigurationClassBeanDefinitionReader.java:319) ~[spring-context-6.0.3.jar:6.0.3]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:204) ~[spring-context-6.0.3.jar:6.0.3]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:144) ~[spring-context-6.0.3.jar:6.0.3]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120) ~[spring-context-6.0.3.jar:6.0.3]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:410) ~[spring-context-6.0.3.jar:6.0.3]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:283) ~[spring-context-6.0.3.jar:6.0.3]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:344) ~[spring-context-6.0.3.jar:6.0.3]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:115) ~[spring-context-6.0.3.jar:6.0.3]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:745) ~[spring-context-6.0.3.jar:6.0.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:565) ~[spring-context-6.0.3.jar:6.0.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.1.jar:3.0.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-3.0.1.jar:3.0.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432) ~[spring-boot-3.0.1.jar:3.0.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-3.0.1.jar:3.0.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) ~[spring-boot-3.0.1.jar:3.0.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291) ~[spring-boot-3.0.1.jar:3.0.1]
+	at com.septim.twitchapp.TwitchAppApplication.main(TwitchAppApplication.java:10) ~[main/:na]
+
+2023-01-18T00:34:26.763-08:00  INFO 26740 --- [main] c.septim.twitchapp.TwitchAppApplication  : Starting TwitchAppApplication using Java 17.0.5 with PID 26740 (C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp\build\classes\java\main started by x412j in C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp)
+2023-01-18T00:34:26.765-08:00  INFO 26740 --- [main] c.septim.twitchapp.TwitchAppApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-01-18T00:34:27.013-08:00  WARN 26740 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'twitchAppApplication' defined in class path resource [com/septim/twitchapp/AppConfig.class]: @Bean definition illegally overridden by existing bean definition: Generic bean: class [com.septim.twitchapp.TwitchAppApplication]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null
+2023-01-18T00:34:27.019-08:00  INFO 26740 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-01-18T00:34:27.035-08:00 ERROR 26740 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'twitchAppApplication' defined in class path resource [com/septim/twitchapp/AppConfig.class]: @Bean definition illegally overridden by existing bean definition: Generic bean: class [com.septim.twitchapp.TwitchAppApplication]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.isOverriddenByExistingDefinition(ConfigurationClassBeanDefinitionReader.java:319) ~[spring-context-6.0.3.jar:6.0.3]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:204) ~[spring-context-6.0.3.jar:6.0.3]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:144) ~[spring-context-6.0.3.jar:6.0.3]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120) ~[spring-context-6.0.3.jar:6.0.3]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:410) ~[spring-context-6.0.3.jar:6.0.3]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:283) ~[spring-context-6.0.3.jar:6.0.3]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:344) ~[spring-context-6.0.3.jar:6.0.3]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:115) ~[spring-context-6.0.3.jar:6.0.3]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:745) ~[spring-context-6.0.3.jar:6.0.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:565) ~[spring-context-6.0.3.jar:6.0.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.1.jar:3.0.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-3.0.1.jar:3.0.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432) ~[spring-boot-3.0.1.jar:3.0.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-3.0.1.jar:3.0.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) ~[spring-boot-3.0.1.jar:3.0.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291) ~[spring-boot-3.0.1.jar:3.0.1]
+	at com.septim.twitchapp.TwitchAppApplication.main(TwitchAppApplication.java:10) ~[main/:na]
+
+2023-01-18T00:35:34.343-08:00  INFO 23736 --- [main] c.septim.twitchapp.TwitchAppApplication  : Starting TwitchAppApplication using Java 17.0.5 with PID 23736 (C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp\build\classes\java\main started by x412j in C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp)
+2023-01-18T00:35:34.345-08:00  INFO 23736 --- [main] c.septim.twitchapp.TwitchAppApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-01-18T00:35:35.014-08:00  INFO 23736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-01-18T00:35:35.023-08:00  INFO 23736 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-18T00:35:35.023-08:00  INFO 23736 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-01-18T00:35:35.097-08:00  INFO 23736 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-18T00:35:35.097-08:00  INFO 23736 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 721 ms
+2023-01-18T00:35:35.643-08:00  INFO 23736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-18T00:35:35.650-08:00  INFO 23736 --- [main] c.septim.twitchapp.TwitchAppApplication  : Started TwitchAppApplication in 1.666 seconds (process running for 2.025)
+2023-01-18T00:36:46.489-08:00  INFO 21452 --- [main] c.septim.twitchapp.TwitchAppApplication  : Starting TwitchAppApplication using Java 17.0.5 with PID 21452 (C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp\build\classes\java\main started by x412j in C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp)
+2023-01-18T00:36:46.491-08:00  INFO 21452 --- [main] c.septim.twitchapp.TwitchAppApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-01-18T00:36:47.124-08:00  INFO 21452 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-01-18T00:36:47.132-08:00  INFO 21452 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-18T00:36:47.132-08:00  INFO 21452 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-01-18T00:36:47.202-08:00  INFO 21452 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-18T00:36:47.202-08:00  INFO 21452 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 680 ms
+2023-01-18T00:36:47.661-08:00  INFO 21452 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-18T00:36:47.668-08:00  INFO 21452 --- [main] c.septim.twitchapp.TwitchAppApplication  : Started TwitchAppApplication in 1.531 seconds (process running for 1.886)
+2023-01-18T00:36:47.728-08:00 TRACE 21452 --- [main] o.s.w.r.f.client.ExchangeFunctions       : [677ce519] HTTP POST https://id.twitch.tv/oauth2/token, headers={masked}
+2023-01-18T00:36:48.597-08:00 TRACE 21452 --- [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [677ce519] [2a1d5844-1] Response 200 OK, headers={masked}
+2023-01-18T00:36:48.660-08:00 TRACE 21452 --- [main] o.s.w.r.f.client.ExchangeFunctions       : [50f4b83d] HTTP GET https://api.twitch.tv/helix/clips/?game_id=21779&first=2, headers={masked}
+2023-01-18T00:36:48.943-08:00 TRACE 21452 --- [reactor-http-nio-3] o.s.w.r.f.client.ExchangeFunctions       : [50f4b83d] [ab1828ff-1] Response 200 OK, headers={masked}
+2023-01-18T00:36:48.960-08:00  INFO 21452 --- [main] c.s.t.external.DevelopementTester        : [Clip[id=BeautifulTentativeRhinocerosANELE, url=https://clips.twitch.tv/BeautifulTentativeRhinocerosANELE, embedUrl=https://clips.twitch.tv/embed?clip=BeautifulTentativeRhinocerosANELE, broadcasterId=25978600, broadCasterName=nacestarleague3, creatorId=25139393, creatorName=CookiesOP, videoId=, gameId=21779, language=en, viewCount=1766031, createdAt=2019-04-28T19:39:58Z, thumbnailUrl=https://clips-media-assets2.twitch.tv/AT-cm%7C446951511-preview-480x272.jpg, duration=59.9, vodOffset=null], Clip[id=AntediluvianAmorphousEchidnaKappaPride, url=https://clips.twitch.tv/AntediluvianAmorphousEchidnaKappaPride, embedUrl=https://clips.twitch.tv/embed?clip=AntediluvianAmorphousEchidnaKappaPride, broadcasterId=45545070, broadCasterName=Kashin, creatorId=156255094, creatorName=automationuser, videoId=61840731, gameId=21779, language=en, viewCount=1018483, createdAt=2017-07-31T17:01:06Z, thumbnailUrl=https://clips-media-assets2.twitch.tv/vod-61840731-offset-30-preview-480x272.jpg, duration=28.0, vodOffset=4]]
