@@ -17,7 +17,9 @@ public record Clip(
         @JsonProperty("created_at") String createdAt,
         @JsonProperty("thumbnail_url") String thumbnailUrl,
         Float duration,
-        @JsonProperty("vod_offset") Integer vodOffset
+        @JsonProperty("vod_offset") Integer vodOffset,
+
+        String title
 
 
 ) {

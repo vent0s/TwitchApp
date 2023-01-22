@@ -20,6 +20,8 @@ public class DevelopementTester implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) {
+
+
         List<Game> games = twitchService.getGames("fortnite");
         List<Game> topGames = twitchService.getTopGames();
         List<Video> videos = twitchService.getVideos("21779", 2);
@@ -32,5 +34,6 @@ public class DevelopementTester implements ApplicationRunner {
         logger.info(videos.toString());
         logger.info(clips.toString());
         logger.info(streams.toString());
+
     }
 }

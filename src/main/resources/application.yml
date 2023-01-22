@@ -2,6 +2,10 @@
 #This file is where we customize how the application runs. We will be adding more configurations here in the future,
 #including database username, password, init script, twitch client key, secret, etc.
 
+spring:
+  jackson:
+    default-property-inclusion: non_null
+
 logging:
   level:
     org.apache.coyote.http11.Http11InputBuffer: DEBUG #Incoming HTTP requests

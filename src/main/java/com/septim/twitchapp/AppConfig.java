@@ -21,6 +21,7 @@ import org.springframework.web.service.invoker.HttpServiceProxyFactory;
 @Configuration
 public class AppConfig {
     //BASE URL IS IMPLEMENT FROM HERE
+    //Bean适合用于一个方法，如果要类来实现的话就要用component
     @Bean
     public TwitchIdentityClient twitchIdentityClient() {
         WebClient client = WebClient.builder().baseUrl("https://id.twitch.tv").build();
