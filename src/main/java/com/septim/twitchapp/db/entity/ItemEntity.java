@@ -4,9 +4,12 @@ import com.septim.twitchapp.external.model.*;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.septim.twitchapp.external.model.Video;
 import com.septim.twitchapp.model.ItemType;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Table;
 
+@Table("items")
 public record ItemEntity(
-        Long id,
+        @Id Long id,
         @JsonProperty("twitch_id") String twitchId,
         String title,
         String url,

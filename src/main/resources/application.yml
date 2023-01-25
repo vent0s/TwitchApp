@@ -5,6 +5,11 @@
 spring:
   jackson:
     default-property-inclusion: non_null
+  datasource:
+    url: jdbc:mysql://${DATABASE_URL:localhost}:3306/twitch?createDatabaseIfNotExist=true
+    username: ${DATABASE_USERNAME:root}
+    password: ${DATABASE_PASSWORD:secret}
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
 logging:
   level:
