@@ -3,6 +3,10 @@
 #including database username, password, init script, twitch client key, secret, etc.
 
 spring:
+  sql:
+    init:
+      mode: ${INIT_DB:always}
+      schema-locations: "classpath:database-init.sql"
   jackson:
     default-property-inclusion: non_null
   datasource:
@@ -11,10 +15,12 @@ spring:
     password: ${DATABASE_PASSWORD:secret}
     driver-class-name: com.mysql.cj.jdbc.Driver
 
+
 logging:
   level:
     org.apache.coyote.http11.Http11InputBuffer: DEBUG #Incoming HTTP requests
     org.springframework.web.reactive.function.client.ExchangeFunctions: TRACE # Outgoing http requests
+    org.springframework.jdbc.core: DEBUG #Sql
 
 twitch:
   client-id: "c0ve1irt55xne1mjrcj5p0mpv4vtwq"
