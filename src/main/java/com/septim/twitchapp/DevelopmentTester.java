@@ -1,7 +1,8 @@
-package com.septim.twitchapp.external;
+package com.septim.twitchapp;
 
 import com.septim.twitchapp.db.UserRepository;
 import com.septim.twitchapp.db.entity.UserEntity;
+import com.septim.twitchapp.user.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.ApplicationArguments;
@@ -16,16 +17,19 @@ public class DevelopmentTester implements ApplicationRunner {
 
     private static final Logger logger = LoggerFactory.getLogger(DevelopmentTester.class);
 
-    private final UserRepository userRepository;
 
-    public DevelopmentTester(UserRepository userRepository) {
-        this.userRepository = userRepository;
+    private final UserService userService;
+
+
+    public DevelopmentTester(
+            UserService userService) {
+        this.userService = userService;
     }
+
 
     @Override
     public void run(ApplicationArguments args) {
-        UserEntity newUser = new UserEntity(null, "user0", "Foo", "Bar", "password");
-        userRepository.save(newUser);
+        userService.register("default", "123456", "John", "Smith");
     }
 }
 

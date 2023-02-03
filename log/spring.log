@@ -1,77 +1,24 @@
-2023-01-28T09:07:19.001-08:00  INFO 25972 --- [main] c.septim.twitchapp.TwitchAppApplication  : Starting TwitchAppApplication using Java 17.0.5 with PID 25972 (C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp\build\classes\java\main started by x412j in C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp)
-2023-01-28T09:07:19.007-08:00  INFO 25972 --- [main] c.septim.twitchapp.TwitchAppApplication  : No active profile set, falling back to 1 default profile: "default"
-2023-01-28T09:07:19.591-08:00  INFO 25972 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2023-01-28T09:07:19.711-08:00  INFO 25972 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 116 ms. Found 3 JDBC repository interfaces.
-2023-01-28T09:07:20.088-08:00  INFO 25972 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-01-28T09:07:20.097-08:00  INFO 25972 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-01-28T09:07:20.097-08:00  INFO 25972 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
-2023-01-28T09:07:20.176-08:00  INFO 25972 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-01-28T09:07:20.176-08:00  INFO 25972 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1131 ms
-2023-01-28T09:07:20.250-08:00  INFO 25972 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-01-28T09:07:20.484-08:00  INFO 25972 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@a0c5be
-2023-01-28T09:07:20.485-08:00  INFO 25972 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-01-28T09:07:21.297-08:00  INFO 25972 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-01-28T09:07:21.303-08:00  INFO 25972 --- [main] c.septim.twitchapp.TwitchAppApplication  : Started TwitchAppApplication in 2.657 seconds (process running for 4.468)
-2023-01-28T09:07:21.362-08:00 DEBUG 25972 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing SQL update and returning generated keys
-2023-01-28T09:07:21.363-08:00 DEBUG 25972 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO `users` (`first_name`, `last_name`, `password`, `username`) VALUES (?, ?, ?, ?)]
-2023-01-28T09:07:36.728-08:00  INFO 25972 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-01-28T09:07:36.742-08:00  INFO 25972 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-01-28T09:13:49.928-08:00  INFO 30840 --- [main] c.septim.twitchapp.TwitchAppApplication  : Starting TwitchAppApplication using Java 17.0.5 with PID 30840 (C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp\build\classes\java\main started by x412j in C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp)
-2023-01-28T09:13:49.931-08:00  INFO 30840 --- [main] c.septim.twitchapp.TwitchAppApplication  : No active profile set, falling back to 1 default profile: "default"
-2023-01-28T09:13:50.389-08:00  INFO 30840 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2023-01-28T09:13:50.510-08:00  INFO 30840 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 116 ms. Found 3 JDBC repository interfaces.
-2023-01-28T09:13:50.872-08:00  INFO 30840 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-01-28T09:13:50.881-08:00  INFO 30840 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-01-28T09:13:50.881-08:00  INFO 30840 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
-2023-01-28T09:13:50.957-08:00  INFO 30840 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-01-28T09:13:50.957-08:00  INFO 30840 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 993 ms
-2023-01-28T09:13:51.029-08:00  INFO 30840 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-01-28T09:13:51.251-08:00  INFO 30840 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4c38cd16
-2023-01-28T09:13:51.252-08:00  INFO 30840 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-01-28T09:13:52.067-08:00  INFO 30840 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-01-28T09:13:52.073-08:00  INFO 30840 --- [main] c.septim.twitchapp.TwitchAppApplication  : Started TwitchAppApplication in 2.505 seconds (process running for 2.895)
-2023-01-28T09:13:52.136-08:00 DEBUG 30840 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing SQL update and returning generated keys
-2023-01-28T09:13:52.136-08:00 DEBUG 30840 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO `users` (`first_name`, `last_name`, `password`, `username`) VALUES (?, ?, ?, ?)]
-2023-01-28T09:13:52.175-08:00 DEBUG 30840 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO `users` (`first_name`, `last_name`, `password`, `username`) VALUES (?, ?, ?, ?)]
-2023-01-28T09:13:52.194-08:00 DEBUG 30840 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing SQL update and returning generated keys
-2023-01-28T09:13:52.194-08:00 DEBUG 30840 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO `items` (`broadcaster_name`, `game_id`, `thumbnail_url`, `title`, `twitch_id`, `type`, `url`) VALUES (?, ?, ?, ?, ?, ?, ?)]
-2023-01-28T09:13:52.207-08:00 DEBUG 30840 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO `items` (`broadcaster_name`, `game_id`, `thumbnail_url`, `title`, `twitch_id`, `type`, `url`) VALUES (?, ?, ?, ?, ?, ?, ?)]
-2023-01-28T09:13:52.225-08:00 DEBUG 30840 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO `favorite_records` (`created_at`, `item_id`, `user_id`) VALUES (?, ?, ?)]
-2023-01-28T09:14:22.508-08:00  INFO 30840 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-01-28T09:14:22.520-08:00  INFO 30840 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-01-28T09:50:07.901-08:00  INFO 33688 --- [main] c.septim.twitchapp.TwitchAppApplication  : Starting TwitchAppApplication using Java 17.0.5 with PID 33688 (C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp\build\classes\java\main started by x412j in C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp)
-2023-01-28T09:50:07.904-08:00  INFO 33688 --- [main] c.septim.twitchapp.TwitchAppApplication  : No active profile set, falling back to 1 default profile: "default"
-2023-01-28T09:50:08.537-08:00  INFO 33688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2023-01-28T09:50:08.686-08:00  INFO 33688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 143 ms. Found 3 JDBC repository interfaces.
-2023-01-28T09:50:09.079-08:00  INFO 33688 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-01-28T09:50:09.088-08:00  INFO 33688 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-01-28T09:50:09.088-08:00  INFO 33688 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
-2023-01-28T09:50:09.185-08:00  INFO 33688 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-01-28T09:50:09.185-08:00  INFO 33688 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1243 ms
-2023-01-28T09:50:09.264-08:00  INFO 33688 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-01-28T09:50:09.511-08:00  INFO 33688 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b9c411
-2023-01-28T09:50:09.512-08:00  INFO 33688 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-01-28T09:50:10.415-08:00  INFO 33688 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-01-28T09:50:10.421-08:00  INFO 33688 --- [main] c.septim.twitchapp.TwitchAppApplication  : Started TwitchAppApplication in 2.896 seconds (process running for 3.502)
-2023-01-28T09:50:10.503-08:00 DEBUG 33688 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing SQL update and returning generated keys
-2023-01-28T09:50:10.503-08:00 DEBUG 33688 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO `users` (`first_name`, `last_name`, `password`, `username`) VALUES (?, ?, ?, ?)]
-2023-01-28T09:50:12.009-08:00  INFO 33688 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-01-28T09:50:12.022-08:00  INFO 33688 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-01-28T09:55:35.093-08:00  INFO 38604 --- [main] c.septim.twitchapp.TwitchAppApplication  : Starting TwitchAppApplication using Java 17.0.5 with PID 38604 (C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp\build\classes\java\main started by x412j in C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp)
-2023-01-28T09:55:35.095-08:00  INFO 38604 --- [main] c.septim.twitchapp.TwitchAppApplication  : No active profile set, falling back to 1 default profile: "default"
-2023-01-28T09:55:35.547-08:00  INFO 38604 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2023-01-28T09:55:35.670-08:00  INFO 38604 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119 ms. Found 3 JDBC repository interfaces.
-2023-01-28T09:55:36.032-08:00  INFO 38604 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-01-28T09:55:36.040-08:00  INFO 38604 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-01-28T09:55:36.040-08:00  INFO 38604 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
-2023-01-28T09:55:36.114-08:00  INFO 38604 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-01-28T09:55:36.115-08:00  INFO 38604 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 986 ms
-2023-01-28T09:55:36.187-08:00  INFO 38604 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-01-28T09:55:36.410-08:00  INFO 38604 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3313d477
-2023-01-28T09:55:36.413-08:00  INFO 38604 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-01-28T09:55:37.282-08:00  INFO 38604 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-01-28T09:55:37.287-08:00  INFO 38604 --- [main] c.septim.twitchapp.TwitchAppApplication  : Started TwitchAppApplication in 2.549 seconds (process running for 2.936)
-2023-01-28T09:55:37.346-08:00 DEBUG 38604 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing SQL update and returning generated keys
-2023-01-28T09:55:37.346-08:00 DEBUG 38604 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO `users` (`first_name`, `last_name`, `password`, `username`) VALUES (?, ?, ?, ?)]
-2023-01-28T09:55:39.872-08:00  INFO 38604 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-01-28T09:55:39.884-08:00  INFO 38604 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-02T18:26:44.979-08:00  INFO 9528 --- [main] c.septim.twitchapp.TwitchAppApplication  : Starting TwitchAppApplication using Java 17.0.5 with PID 9528 (C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp\build\classes\java\main started by x412j in C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp)
+2023-02-02T18:26:44.986-08:00  INFO 9528 --- [main] c.septim.twitchapp.TwitchAppApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-02-02T18:26:45.729-08:00  INFO 9528 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-02-02T18:26:45.876-08:00  INFO 9528 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 142 ms. Found 3 JDBC repository interfaces.
+2023-02-02T18:26:46.321-08:00  INFO 9528 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-02T18:26:46.332-08:00  INFO 9528 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-02T18:26:46.332-08:00  INFO 9528 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-02-02T18:26:46.420-08:00  INFO 9528 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-02T18:26:46.420-08:00  INFO 9528 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1395 ms
+2023-02-02T18:26:46.504-08:00  INFO 9528 --- [main] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2023-02-02T18:26:46.536-08:00  INFO 9528 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-02T18:26:46.827-08:00  INFO 9528 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2017f6e6
+2023-02-02T18:26:46.833-08:00  INFO 9528 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-02T18:26:47.723-08:00  INFO 9528 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2619cb76, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56f2c9e8, org.springframework.security.web.context.SecurityContextHolderFilter@3578a45b, org.springframework.security.web.header.HeaderWriterFilter@20f63ddc, org.springframework.security.web.authentication.logout.LogoutFilter@57fce8b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5daad59a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@65e05005, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@569a26ab, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@457692cb, org.springframework.security.web.access.ExceptionTranslationFilter@62054faf, org.springframework.security.web.access.intercept.AuthorizationFilter@11295cb1]
+2023-02-02T18:26:47.883-08:00  INFO 9528 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-02T18:26:47.890-08:00  INFO 9528 --- [main] c.septim.twitchapp.TwitchAppApplication  : Started TwitchAppApplication in 3.33 seconds (process running for 5.377)
+2023-02-02T18:26:47.966-08:00 DEBUG 9528 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2023-02-02T18:26:47.967-08:00 DEBUG 9528 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [insert into users (username, password, enabled) values (?,?,?)]
+2023-02-02T18:26:47.988-08:00 DEBUG 9528 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2023-02-02T18:26:47.988-08:00 DEBUG 9528 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [insert into authorities (username, authority) values (?,?)]
+2023-02-02T18:26:48.008-08:00 DEBUG 9528 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2023-02-02T18:26:48.008-08:00 DEBUG 9528 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [UPDATE users SET first_name = ?, last_name = ? WHERE username = ?]
+2023-02-02T18:27:35.404-08:00  INFO 9528 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-02T18:27:35.416-08:00  INFO 9528 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

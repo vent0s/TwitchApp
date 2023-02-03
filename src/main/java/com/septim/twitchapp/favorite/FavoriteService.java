@@ -17,25 +17,24 @@ public class FavoriteService {
     private final ItemRepository itemRepository;
     private final FavoriteRecordRepository favoriteRecordRepository;
 
-    public FavoriteService(ItemRepository itemRepository,
-                           FavoriteRecordRepository favoriteRecordRepository) {
+    public FavoriteService(ItemRepository itemRepository, FavoriteRecordRepository favoriteRecordRepository) {
         this.itemRepository = itemRepository;
         this.favoriteRecordRepository = favoriteRecordRepository;
     }
 
     @Transactional
     public void setFavoriteItem(UserEntity user, ItemEntity item) {
-        ItemEntity peristedItem = itemRepository.findByTwitchId(item.twitchId());
-        if (peristedItem == null) {
-            peristedItem = itemRepository.save(item);
+        ItemEntity persistedItem = itemRepository.findByTwitchId(item.twitchId());
+        if (persistedItem == null) {
+            persistedItem = itemRepository.save(item);
         }
-        FavoriteRecordEntity favoriteRecord = new FavoriteRecordEntity(null, user.id(), peristedItem.id(), Instant.now());
+        FavoriteRecordEntity favoriteRecord = new FavoriteRecordEntity(null, user.id(), persistedItem.id(), Instant.now());
         favoriteRecordRepository.save(favoriteRecord);
     }
 
     public void unsetFavoriteItem(UserEntity user, String twitchId) {
         ItemEntity item = itemRepository.findByTwitchId(twitchId);
-        if (item != null) {
+        if (item!=null) {
             favoriteRecordRepository.delete(user.id(), item.id());
         }
     }
@@ -49,4 +48,5 @@ public class FavoriteService {
         List<ItemEntity> items = getFavoriteItems(user);
         return new TypeGroupedItemList(items);
     }
+
 }
