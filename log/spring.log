@@ -1,24 +1,92 @@
-2023-02-02T18:26:44.979-08:00  INFO 9528 --- [main] c.septim.twitchapp.TwitchAppApplication  : Starting TwitchAppApplication using Java 17.0.5 with PID 9528 (C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp\build\classes\java\main started by x412j in C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp)
-2023-02-02T18:26:44.986-08:00  INFO 9528 --- [main] c.septim.twitchapp.TwitchAppApplication  : No active profile set, falling back to 1 default profile: "default"
-2023-02-02T18:26:45.729-08:00  INFO 9528 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2023-02-02T18:26:45.876-08:00  INFO 9528 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 142 ms. Found 3 JDBC repository interfaces.
-2023-02-02T18:26:46.321-08:00  INFO 9528 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-02-02T18:26:46.332-08:00  INFO 9528 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-02-02T18:26:46.332-08:00  INFO 9528 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
-2023-02-02T18:26:46.420-08:00  INFO 9528 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-02-02T18:26:46.420-08:00  INFO 9528 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1395 ms
-2023-02-02T18:26:46.504-08:00  INFO 9528 --- [main] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
-2023-02-02T18:26:46.536-08:00  INFO 9528 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-02-02T18:26:46.827-08:00  INFO 9528 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2017f6e6
-2023-02-02T18:26:46.833-08:00  INFO 9528 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-02-02T18:26:47.723-08:00  INFO 9528 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2619cb76, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56f2c9e8, org.springframework.security.web.context.SecurityContextHolderFilter@3578a45b, org.springframework.security.web.header.HeaderWriterFilter@20f63ddc, org.springframework.security.web.authentication.logout.LogoutFilter@57fce8b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5daad59a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@65e05005, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@569a26ab, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@457692cb, org.springframework.security.web.access.ExceptionTranslationFilter@62054faf, org.springframework.security.web.access.intercept.AuthorizationFilter@11295cb1]
-2023-02-02T18:26:47.883-08:00  INFO 9528 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-02-02T18:26:47.890-08:00  INFO 9528 --- [main] c.septim.twitchapp.TwitchAppApplication  : Started TwitchAppApplication in 3.33 seconds (process running for 5.377)
-2023-02-02T18:26:47.966-08:00 DEBUG 9528 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
-2023-02-02T18:26:47.967-08:00 DEBUG 9528 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [insert into users (username, password, enabled) values (?,?,?)]
-2023-02-02T18:26:47.988-08:00 DEBUG 9528 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
-2023-02-02T18:26:47.988-08:00 DEBUG 9528 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [insert into authorities (username, authority) values (?,?)]
-2023-02-02T18:26:48.008-08:00 DEBUG 9528 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
-2023-02-02T18:26:48.008-08:00 DEBUG 9528 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [UPDATE users SET first_name = ?, last_name = ? WHERE username = ?]
-2023-02-02T18:27:35.404-08:00  INFO 9528 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-02-02T18:27:35.416-08:00  INFO 9528 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-05T02:06:33.109-08:00  INFO 21180 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-05T02:06:33.189-08:00  INFO 21180 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-05T14:33:26.389-08:00  INFO 15984 --- [main] c.septim.twitchapp.TwitchAppApplication  : Starting TwitchAppApplication using Java 17.0.5 with PID 15984 (C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp\build\classes\java\main started by x412j in C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp)
+2023-02-05T14:33:26.391-08:00  INFO 15984 --- [main] c.septim.twitchapp.TwitchAppApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-02-05T14:33:27.066-08:00  INFO 15984 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-02-05T14:33:27.202-08:00  INFO 15984 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 132 ms. Found 3 JDBC repository interfaces.
+2023-02-05T14:33:27.620-08:00  INFO 15984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-05T14:33:27.629-08:00  INFO 15984 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-05T14:33:27.629-08:00  INFO 15984 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-02-05T14:33:27.703-08:00  INFO 15984 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-05T14:33:27.704-08:00  INFO 15984 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1277 ms
+2023-02-05T14:33:27.791-08:00  INFO 15984 --- [main] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2023-02-05T14:33:27.819-08:00  INFO 15984 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-05T14:33:28.051-08:00  INFO 15984 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3b57dba4
+2023-02-05T14:33:28.053-08:00  INFO 15984 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-05T14:33:28.894-08:00  INFO 15984 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5e95b0ab, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5876bed9, org.springframework.security.web.context.SecurityContextHolderFilter@1450ffa3, org.springframework.security.web.header.HeaderWriterFilter@8aa5ab4, org.springframework.security.web.authentication.logout.LogoutFilter@445b85d7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@65259c53, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@38ebc866, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a7f9d45, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@73ddb7ef, org.springframework.security.web.access.ExceptionTranslationFilter@3d718248, org.springframework.security.web.access.intercept.AuthorizationFilter@8d29719]
+2023-02-05T14:33:29.059-08:00  INFO 15984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-05T14:33:29.065-08:00  INFO 15984 --- [main] c.septim.twitchapp.TwitchAppApplication  : Started TwitchAppApplication in 3.053 seconds (process running for 5.152)
+2023-02-05T14:33:29.139-08:00 DEBUG 15984 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2023-02-05T14:33:29.140-08:00 DEBUG 15984 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [insert into users (username, password, enabled) values (?,?,?)]
+2023-02-05T14:33:29.160-08:00 DEBUG 15984 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2023-02-05T14:33:29.160-08:00 DEBUG 15984 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [insert into authorities (username, authority) values (?,?)]
+2023-02-05T14:33:29.178-08:00 DEBUG 15984 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2023-02-05T14:33:29.178-08:00 DEBUG 15984 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [UPDATE users SET first_name = ?, last_name = ? WHERE username = ?]
+2023-02-05T14:33:32.044-08:00  INFO 15984 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-05T14:33:32.055-08:00  INFO 15984 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-05T15:10:49.710-08:00  INFO 14424 --- [main] c.septim.twitchapp.TwitchAppApplication  : Starting TwitchAppApplication using Java 17.0.5 with PID 14424 (C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp\build\classes\java\main started by x412j in C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp)
+2023-02-05T15:10:49.712-08:00  INFO 14424 --- [main] c.septim.twitchapp.TwitchAppApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-02-05T15:10:50.306-08:00  INFO 14424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-02-05T15:10:50.439-08:00  INFO 14424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 3 JDBC repository interfaces.
+2023-02-05T15:10:50.875-08:00  INFO 14424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-05T15:10:50.884-08:00  INFO 14424 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-05T15:10:50.884-08:00  INFO 14424 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-02-05T15:10:50.965-08:00  INFO 14424 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-05T15:10:50.965-08:00  INFO 14424 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1213 ms
+2023-02-05T15:10:51.050-08:00  INFO 14424 --- [main] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2023-02-05T15:10:51.079-08:00  INFO 14424 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-05T15:10:51.346-08:00  INFO 14424 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@751d7425
+2023-02-05T15:10:51.348-08:00  INFO 14424 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-05T15:10:52.275-08:00  INFO 14424 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@45ad3cd8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b90cc1, org.springframework.security.web.context.SecurityContextHolderFilter@3ec7eb5, org.springframework.security.web.header.HeaderWriterFilter@97beeaf, org.springframework.security.web.authentication.logout.LogoutFilter@8aa5ab4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@772cf46b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c6fc3e7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ae2fa13, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a2f401a, org.springframework.security.web.access.ExceptionTranslationFilter@4c13ca07, org.springframework.security.web.access.intercept.AuthorizationFilter@7a7f9d45]
+2023-02-05T15:10:52.438-08:00  INFO 14424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-05T15:10:52.445-08:00  INFO 14424 --- [main] c.septim.twitchapp.TwitchAppApplication  : Started TwitchAppApplication in 3.138 seconds (process running for 3.652)
+2023-02-05T15:10:52.519-08:00 DEBUG 14424 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2023-02-05T15:10:52.520-08:00 DEBUG 14424 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [insert into users (username, password, enabled) values (?,?,?)]
+2023-02-05T15:10:52.538-08:00 DEBUG 14424 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2023-02-05T15:10:52.539-08:00 DEBUG 14424 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [insert into authorities (username, authority) values (?,?)]
+2023-02-05T15:10:52.557-08:00 DEBUG 14424 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2023-02-05T15:10:52.557-08:00 DEBUG 14424 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [UPDATE users SET first_name = ?, last_name = ? WHERE username = ?]
+2023-02-05T15:42:46.770-08:00 DEBUG 14424 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [0]
+2023-02-05T15:42:46.770-08:00 DEBUG 14424 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Received [GET / HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+
+]
+2023-02-05T15:42:46.789-08:00  INFO 14424 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-05T15:42:46.790-08:00  INFO 14424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-02-05T15:42:46.791-08:00  INFO 14424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-02-05T15:42:46.834-08:00 DEBUG 14424 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [679]
+2023-02-05T15:42:46.834-08:00 DEBUG 14424 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Received []
+2023-02-05T15:42:46.916-08:00 DEBUG 14424 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [679]
+2023-02-05T15:42:46.917-08:00 DEBUG 14424 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Received [GET /favicon.ico HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+
+]
+2023-02-05T15:42:46.960-08:00 DEBUG 14424 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [605]
+2023-02-05T15:42:46.961-08:00 DEBUG 14424 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Received []
+2023-02-05T15:46:27.476-08:00  INFO 14424 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-05T15:46:27.488-08:00  INFO 14424 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

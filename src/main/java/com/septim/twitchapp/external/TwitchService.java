@@ -2,6 +2,7 @@ package com.septim.twitchapp.external;
 
 import com.septim.twitchapp.external.model.*;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClientResponseException;
 
@@ -34,12 +35,14 @@ public class TwitchService {
         this.twitchIdentityClient = twitchIdentityClient;
     }
 
+    @Cacheable("top_games")
     public List<Game> getTopGames() {
         return requestWithToken(() ->
                 twitchApiClient.getTopGames(bearerToken()).data()
         );
     }
 
+    @Cacheable("games_by_name")
     public List<Game> getGames(String name) {
         return requestWithToken(() ->
                 twitchApiClient.getGames(bearerToken(), name).data()

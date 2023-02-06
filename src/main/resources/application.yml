@@ -3,6 +3,9 @@
 #including database username, password, init script, twitch client key, secret, etc.
 
 spring:
+  cache:
+    caffeine:
+      spec: expireAfterWrite=1m
   sql:
     init:
       mode: ${INIT_DB:always}
