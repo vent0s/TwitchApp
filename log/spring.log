@@ -1,92 +1,679 @@
-2023-02-05T02:06:33.109-08:00  INFO 21180 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-02-05T02:06:33.189-08:00  INFO 21180 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-02-05T14:33:26.389-08:00  INFO 15984 --- [main] c.septim.twitchapp.TwitchAppApplication  : Starting TwitchAppApplication using Java 17.0.5 with PID 15984 (C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp\build\classes\java\main started by x412j in C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp)
-2023-02-05T14:33:26.391-08:00  INFO 15984 --- [main] c.septim.twitchapp.TwitchAppApplication  : No active profile set, falling back to 1 default profile: "default"
-2023-02-05T14:33:27.066-08:00  INFO 15984 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2023-02-05T14:33:27.202-08:00  INFO 15984 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 132 ms. Found 3 JDBC repository interfaces.
-2023-02-05T14:33:27.620-08:00  INFO 15984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-02-05T14:33:27.629-08:00  INFO 15984 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-02-05T14:33:27.629-08:00  INFO 15984 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
-2023-02-05T14:33:27.703-08:00  INFO 15984 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-02-05T14:33:27.704-08:00  INFO 15984 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1277 ms
-2023-02-05T14:33:27.791-08:00  INFO 15984 --- [main] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
-2023-02-05T14:33:27.819-08:00  INFO 15984 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-02-05T14:33:28.051-08:00  INFO 15984 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3b57dba4
-2023-02-05T14:33:28.053-08:00  INFO 15984 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-02-05T14:33:28.894-08:00  INFO 15984 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5e95b0ab, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5876bed9, org.springframework.security.web.context.SecurityContextHolderFilter@1450ffa3, org.springframework.security.web.header.HeaderWriterFilter@8aa5ab4, org.springframework.security.web.authentication.logout.LogoutFilter@445b85d7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@65259c53, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@38ebc866, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a7f9d45, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@73ddb7ef, org.springframework.security.web.access.ExceptionTranslationFilter@3d718248, org.springframework.security.web.access.intercept.AuthorizationFilter@8d29719]
-2023-02-05T14:33:29.059-08:00  INFO 15984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-02-05T14:33:29.065-08:00  INFO 15984 --- [main] c.septim.twitchapp.TwitchAppApplication  : Started TwitchAppApplication in 3.053 seconds (process running for 5.152)
-2023-02-05T14:33:29.139-08:00 DEBUG 15984 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
-2023-02-05T14:33:29.140-08:00 DEBUG 15984 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [insert into users (username, password, enabled) values (?,?,?)]
-2023-02-05T14:33:29.160-08:00 DEBUG 15984 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
-2023-02-05T14:33:29.160-08:00 DEBUG 15984 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [insert into authorities (username, authority) values (?,?)]
-2023-02-05T14:33:29.178-08:00 DEBUG 15984 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
-2023-02-05T14:33:29.178-08:00 DEBUG 15984 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [UPDATE users SET first_name = ?, last_name = ? WHERE username = ?]
-2023-02-05T14:33:32.044-08:00  INFO 15984 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-02-05T14:33:32.055-08:00  INFO 15984 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-02-05T15:10:49.710-08:00  INFO 14424 --- [main] c.septim.twitchapp.TwitchAppApplication  : Starting TwitchAppApplication using Java 17.0.5 with PID 14424 (C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp\build\classes\java\main started by x412j in C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp)
-2023-02-05T15:10:49.712-08:00  INFO 14424 --- [main] c.septim.twitchapp.TwitchAppApplication  : No active profile set, falling back to 1 default profile: "default"
-2023-02-05T15:10:50.306-08:00  INFO 14424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2023-02-05T15:10:50.439-08:00  INFO 14424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 3 JDBC repository interfaces.
-2023-02-05T15:10:50.875-08:00  INFO 14424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-02-05T15:10:50.884-08:00  INFO 14424 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-02-05T15:10:50.884-08:00  INFO 14424 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
-2023-02-05T15:10:50.965-08:00  INFO 14424 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-02-05T15:10:50.965-08:00  INFO 14424 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1213 ms
-2023-02-05T15:10:51.050-08:00  INFO 14424 --- [main] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
-2023-02-05T15:10:51.079-08:00  INFO 14424 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-02-05T15:10:51.346-08:00  INFO 14424 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@751d7425
-2023-02-05T15:10:51.348-08:00  INFO 14424 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-02-05T15:10:52.275-08:00  INFO 14424 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@45ad3cd8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b90cc1, org.springframework.security.web.context.SecurityContextHolderFilter@3ec7eb5, org.springframework.security.web.header.HeaderWriterFilter@97beeaf, org.springframework.security.web.authentication.logout.LogoutFilter@8aa5ab4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@772cf46b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c6fc3e7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ae2fa13, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a2f401a, org.springframework.security.web.access.ExceptionTranslationFilter@4c13ca07, org.springframework.security.web.access.intercept.AuthorizationFilter@7a7f9d45]
-2023-02-05T15:10:52.438-08:00  INFO 14424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-02-05T15:10:52.445-08:00  INFO 14424 --- [main] c.septim.twitchapp.TwitchAppApplication  : Started TwitchAppApplication in 3.138 seconds (process running for 3.652)
-2023-02-05T15:10:52.519-08:00 DEBUG 14424 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
-2023-02-05T15:10:52.520-08:00 DEBUG 14424 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [insert into users (username, password, enabled) values (?,?,?)]
-2023-02-05T15:10:52.538-08:00 DEBUG 14424 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
-2023-02-05T15:10:52.539-08:00 DEBUG 14424 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [insert into authorities (username, authority) values (?,?)]
-2023-02-05T15:10:52.557-08:00 DEBUG 14424 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
-2023-02-05T15:10:52.557-08:00 DEBUG 14424 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [UPDATE users SET first_name = ?, last_name = ? WHERE username = ?]
-2023-02-05T15:42:46.770-08:00 DEBUG 14424 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [0]
-2023-02-05T15:42:46.770-08:00 DEBUG 14424 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Received [GET / HTTP/1.1
-Host: localhost:8080
-Connection: keep-alive
-sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"
+2023-02-07T19:14:40.630-08:00  INFO 24556 --- [main] c.septim.twitchapp.TwitchAppApplication  : Starting TwitchAppApplication using Java 17.0.5 with PID 24556 (C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp\build\classes\java\main started by x412j in C:\0PROJECT\0LaiOffer\LaiOfferProject1_Twitch\twitchApp)
+2023-02-07T19:14:40.642-08:00  INFO 24556 --- [main] c.septim.twitchapp.TwitchAppApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-02-07T19:14:41.796-08:00  INFO 24556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-02-07T19:14:41.987-08:00  INFO 24556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 184 ms. Found 3 JDBC repository interfaces.
+2023-02-07T19:14:42.537-08:00  INFO 24556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-07T19:14:42.546-08:00  INFO 24556 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-07T19:14:42.546-08:00  INFO 24556 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-02-07T19:14:42.642-08:00  INFO 24556 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-07T19:14:42.642-08:00  INFO 24556 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1921 ms
+2023-02-07T19:14:42.770-08:00  INFO 24556 --- [main] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2023-02-07T19:14:42.815-08:00  INFO 24556 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-07T19:14:43.145-08:00  INFO 24556 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2becfd4c
+2023-02-07T19:14:43.146-08:00  INFO 24556 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-07T19:14:44.475-08:00  INFO 24556 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@18463720, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64eeddd8, org.springframework.security.web.context.SecurityContextHolderFilter@6124dda2, org.springframework.security.web.header.HeaderWriterFilter@30bd39d5, org.springframework.security.web.authentication.logout.LogoutFilter@47ffdbba, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6339e604, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3bc891f2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3534651a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@10f8e2d2, org.springframework.security.web.access.ExceptionTranslationFilter@d2cb2d0, org.springframework.security.web.access.intercept.AuthorizationFilter@77d95e5a]
+2023-02-07T19:14:44.962-08:00  INFO 24556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-07T19:14:44.973-08:00  INFO 24556 --- [main] c.septim.twitchapp.TwitchAppApplication  : Started TwitchAppApplication in 4.928 seconds (process running for 8.208)
+2023-02-07T19:14:45.074-08:00 DEBUG 24556 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2023-02-07T19:14:45.075-08:00 DEBUG 24556 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [insert into users (username, password, enabled) values (?,?,?)]
+2023-02-07T19:14:45.107-08:00 DEBUG 24556 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2023-02-07T19:14:45.107-08:00 DEBUG 24556 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [insert into authorities (username, authority) values (?,?)]
+2023-02-07T19:14:45.138-08:00 DEBUG 24556 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2023-02-07T19:14:45.138-08:00 DEBUG 24556 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [UPDATE users SET first_name = ?, last_name = ? WHERE username = ?]
+2023-02-07T19:45:12.544-08:00 DEBUG 24556 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [0]
+2023-02-07T19:45:12.551-08:00 DEBUG 24556 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Received [POST /register HTTP/1.1
+x-forwarded-host: localhost:3000
+x-forwarded-proto: http
+x-forwarded-port: 3000
+x-forwarded-for: 127.0.0.1
+accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+accept-encoding: gzip, deflate, br
+referer: http://localhost:3000/
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-origin
+origin: http://localhost:8080/
+accept: */*
+content-type: application/json
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 sec-ch-ua-mobile: ?0
 sec-ch-ua-platform: "Windows"
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
-Sec-Fetch-Site: none
-Sec-Fetch-Mode: navigate
-Sec-Fetch-User: ?1
-Sec-Fetch-Dest: document
-Accept-Encoding: gzip, deflate, br
-Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
-
-]
-2023-02-05T15:42:46.789-08:00  INFO 14424 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-02-05T15:42:46.790-08:00  INFO 14424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-02-05T15:42:46.791-08:00  INFO 14424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-02-05T15:42:46.834-08:00 DEBUG 14424 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [679]
-2023-02-05T15:42:46.834-08:00 DEBUG 14424 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Received []
-2023-02-05T15:42:46.916-08:00 DEBUG 14424 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [679]
-2023-02-05T15:42:46.917-08:00 DEBUG 14424 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Received [GET /favicon.ico HTTP/1.1
-Host: localhost:8080
-Connection: keep-alive
 sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"
+content-length: 83
+connection: close
+host: localhost:8080
+
+{"username":"septim","password":"mandrake","first_name":"septim","last_name":"xia"}]
+2023-02-07T19:45:12.605-08:00  INFO 24556 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-07T19:45:12.606-08:00  INFO 24556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-02-07T19:45:12.637-08:00  INFO 24556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 30 ms
+2023-02-07T19:45:12.896-08:00 DEBUG 24556 --- [http-nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2023-02-07T19:45:12.896-08:00 DEBUG 24556 --- [http-nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [insert into users (username, password, enabled) values (?,?,?)]
+2023-02-07T19:45:12.906-08:00 DEBUG 24556 --- [http-nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2023-02-07T19:45:12.906-08:00 DEBUG 24556 --- [http-nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [insert into authorities (username, authority) values (?,?)]
+2023-02-07T19:45:12.916-08:00 DEBUG 24556 --- [http-nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2023-02-07T19:45:12.917-08:00 DEBUG 24556 --- [http-nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [UPDATE users SET first_name = ?, last_name = ? WHERE username = ?]
+2023-02-07T19:45:20.901-08:00 DEBUG 24556 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [729]
+2023-02-07T19:45:20.901-08:00 DEBUG 24556 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Received [POST /login HTTP/1.1
+x-forwarded-host: localhost:3000
+x-forwarded-proto: http
+x-forwarded-port: 3000
+x-forwarded-for: 127.0.0.1
+accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+accept-encoding: gzip, deflate, br
+referer: http://localhost:3000/
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-origin
+origin: http://localhost:8080/
+accept: */*
+content-type: multipart/form-data; boundary=----WebKitFormBoundaryJ1MRh4OwdKJBEFbB
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 sec-ch-ua-mobile: ?0
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 sec-ch-ua-platform: "Windows"
-Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
-Sec-Fetch-Site: same-origin
-Sec-Fetch-Mode: no-cors
-Sec-Fetch-Dest: image
-Referer: http://localhost:8080/
-Accept-Encoding: gzip, deflate, br
-Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"
+content-length: 242
+connection: close
+host: localhost:8080
+
+------WebKitFormBoundaryJ1MRh4OwdKJBEFbB
+Content-Disposition: form-data; name="username"
+
+septim
+------WebKitFormBoundaryJ1MRh4OwdKJBEFbB
+Content-Disposition: form-data; name="password"
+
+as
+------WebKitFormBoundaryJ1MRh4OwdKJBEFbB--
+]
+2023-02-07T19:45:20.995-08:00 DEBUG 24556 --- [http-nio-8080-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2023-02-07T19:45:20.995-08:00 DEBUG 24556 --- [http-nio-8080-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select username,password,enabled from users where username = ?]
+2023-02-07T19:45:21.014-08:00 DEBUG 24556 --- [http-nio-8080-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2023-02-07T19:45:21.014-08:00 DEBUG 24556 --- [http-nio-8080-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select username,authority from authorities where username = ?]
+2023-02-07T19:45:24.198-08:00 DEBUG 24556 --- [http-nio-8080-exec-4] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [779]
+2023-02-07T19:45:24.198-08:00 DEBUG 24556 --- [http-nio-8080-exec-4] o.a.coyote.http11.Http11InputBuffer      : Received [POST /login HTTP/1.1
+x-forwarded-host: localhost:3000
+x-forwarded-proto: http
+x-forwarded-port: 3000
+x-forwarded-for: 127.0.0.1
+cookie: JSESSIONID=95B70C74BA67B950DDE1ED58AB08AA63
+accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+accept-encoding: gzip, deflate, br
+referer: http://localhost:3000/
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-origin
+origin: http://localhost:8080/
+accept: */*
+content-type: multipart/form-data; boundary=----WebKitFormBoundaryjErZ0NPAgWzDpxaI
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"
+content-length: 248
+connection: close
+host: localhost:8080
+
+------WebKitFormBoundaryjErZ0NPAgWzDpxaI
+Content-Disposition: form-data; name="username"
+
+septim
+------WebKitFormBoundaryjErZ0NPAgWzDpxaI
+Content-Disposition: form-data; name="password"
+
+mandrake
+------WebKitFormBoundaryjErZ0NPAgWzDpxaI--
+]
+2023-02-07T19:45:24.209-08:00 DEBUG 24556 --- [http-nio-8080-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2023-02-07T19:45:24.209-08:00 DEBUG 24556 --- [http-nio-8080-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select username,password,enabled from users where username = ?]
+2023-02-07T19:45:24.212-08:00 DEBUG 24556 --- [http-nio-8080-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2023-02-07T19:45:24.213-08:00 DEBUG 24556 --- [http-nio-8080-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select username,authority from authorities where username = ?]
+2023-02-07T20:14:07.944-08:00 DEBUG 24556 --- [http-nio-8080-exec-5] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [832]
+2023-02-07T20:14:07.951-08:00 DEBUG 24556 --- [http-nio-8080-exec-5] o.a.coyote.http11.Http11InputBuffer      : Received [POST /login HTTP/1.1
+x-forwarded-host: localhost:3000
+x-forwarded-proto: http
+x-forwarded-port: 3000
+x-forwarded-for: 127.0.0.1
+cookie: JSESSIONID=369D345391F16DD6D5A2E32C2CB3192F
+accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+accept-encoding: gzip, deflate, br
+referer: http://localhost:3000/
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-origin
+origin: http://localhost:8080/
+accept: */*
+content-type: multipart/form-data; boundary=----WebKitFormBoundaryyBbJ8n4gSAC4eHBY
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"
+content-length: 248
+connection: close
+host: localhost:8080
+
+------WebKitFormBoundaryyBbJ8n4gSAC4eHBY
+Content-Disposition: form-data; name="username"
+
+septim
+------WebKitFormBoundaryyBbJ8n4gSAC4eHBY
+Content-Disposition: form-data; name="password"
+
+mandrake
+------WebKitFormBoundaryyBbJ8n4gSAC4eHBY--
+]
+2023-02-07T20:14:07.977-08:00 DEBUG 24556 --- [http-nio-8080-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2023-02-07T20:14:07.978-08:00 DEBUG 24556 --- [http-nio-8080-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select username,password,enabled from users where username = ?]
+2023-02-07T20:14:07.986-08:00 DEBUG 24556 --- [http-nio-8080-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2023-02-07T20:14:07.986-08:00 DEBUG 24556 --- [http-nio-8080-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select username,authority from authorities where username = ?]
+2023-02-07T20:14:08.207-08:00 DEBUG 24556 --- [http-nio-8080-exec-3] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [832]
+2023-02-07T20:14:08.207-08:00 DEBUG 24556 --- [http-nio-8080-exec-3] o.a.coyote.http11.Http11InputBuffer      : Received [GET /favorite HTTP/1.1
+x-forwarded-host: localhost:3000
+x-forwarded-proto: http
+x-forwarded-port: 3000
+x-forwarded-for: 127.0.0.1
+cookie: JSESSIONID=EED02EB3C26D03671CCF3D605F690FD3
+accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+accept-encoding: gzip, deflate, br
+referer: http://localhost:3000/
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-origin
+accept: */*
+sec-ch-ua-platform: "Windows"
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+sec-ch-ua-mobile: ?0
+sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"
+connection: close
+host: localhost:8080
 
 ]
-2023-02-05T15:42:46.960-08:00 DEBUG 14424 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [605]
-2023-02-05T15:42:46.961-08:00 DEBUG 14424 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Received []
-2023-02-05T15:46:27.476-08:00  INFO 14424 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-02-05T15:46:27.488-08:00  INFO 14424 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-07T20:14:08.396-08:00 DEBUG 24556 --- [http-nio-8080-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2023-02-07T20:14:08.396-08:00 DEBUG 24556 --- [http-nio-8080-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT `users`.`id` AS `id`, `users`.`username` AS `username`, `users`.`last_name` AS `last_name`, `users`.`password` AS `password`, `users`.`first_name` AS `first_name` FROM `users` WHERE `users`.`username` = ?]
+2023-02-07T20:14:08.441-08:00 DEBUG 24556 --- [http-nio-8080-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2023-02-07T20:14:08.442-08:00 DEBUG 24556 --- [http-nio-8080-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT item_id FROM favorite_records WHERE user_id = ?]
+2023-02-07T20:27:45.522-08:00 DEBUG 24556 --- [http-nio-8080-exec-6] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [697]
+2023-02-07T20:27:45.523-08:00 DEBUG 24556 --- [http-nio-8080-exec-6] o.a.coyote.http11.Http11InputBuffer      : Received [POST /login HTTP/1.1
+x-forwarded-host: localhost:3000
+x-forwarded-proto: http
+x-forwarded-port: 3000
+x-forwarded-for: 127.0.0.1
+cookie: JSESSIONID=EED02EB3C26D03671CCF3D605F690FD3
+accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+accept-encoding: gzip, deflate, br
+referer: http://localhost:3000/
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-origin
+origin: http://localhost:8080/
+accept: */*
+content-type: multipart/form-data; boundary=----WebKitFormBoundary3Xd1rfCVVPhaFYzI
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"
+content-length: 248
+connection: close
+host: localhost:8080
+
+------WebKitFormBoundary3Xd1rfCVVPhaFYzI
+Content-Disposition: form-data; name="username"
+
+septim
+------WebKitFormBoundary3Xd1rfCVVPhaFYzI
+Content-Disposition: form-data; name="password"
+
+mandrake
+------WebKitFormBoundary3Xd1rfCVVPhaFYzI--
+]
+2023-02-07T20:27:45.528-08:00 DEBUG 24556 --- [http-nio-8080-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2023-02-07T20:27:45.528-08:00 DEBUG 24556 --- [http-nio-8080-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select username,password,enabled from users where username = ?]
+2023-02-07T20:27:45.533-08:00 DEBUG 24556 --- [http-nio-8080-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2023-02-07T20:27:45.534-08:00 DEBUG 24556 --- [http-nio-8080-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select username,authority from authorities where username = ?]
+2023-02-07T20:27:45.785-08:00 DEBUG 24556 --- [http-nio-8080-exec-9] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [832]
+2023-02-07T20:27:45.785-08:00 DEBUG 24556 --- [http-nio-8080-exec-9] o.a.coyote.http11.Http11InputBuffer      : Received [GET /favorite HTTP/1.1
+x-forwarded-host: localhost:3000
+x-forwarded-proto: http
+x-forwarded-port: 3000
+x-forwarded-for: 127.0.0.1
+cookie: JSESSIONID=8521DB6E5C72F94E6B469884F97C762A
+accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+accept-encoding: gzip, deflate, br
+referer: http://localhost:3000/
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-origin
+accept: */*
+sec-ch-ua-platform: "Windows"
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+sec-ch-ua-mobile: ?0
+sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"
+connection: close
+host: localhost:8080
+
+]
+2023-02-07T20:27:45.789-08:00 DEBUG 24556 --- [http-nio-8080-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2023-02-07T20:27:45.790-08:00 DEBUG 24556 --- [http-nio-8080-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT `users`.`id` AS `id`, `users`.`username` AS `username`, `users`.`last_name` AS `last_name`, `users`.`password` AS `password`, `users`.`first_name` AS `first_name` FROM `users` WHERE `users`.`username` = ?]
+2023-02-07T20:27:45.793-08:00 DEBUG 24556 --- [http-nio-8080-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2023-02-07T20:27:45.793-08:00 DEBUG 24556 --- [http-nio-8080-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT item_id FROM favorite_records WHERE user_id = ?]
+2023-02-07T20:27:54.870-08:00 DEBUG 24556 --- [http-nio-8080-exec-7] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [697]
+2023-02-07T20:27:54.871-08:00 DEBUG 24556 --- [http-nio-8080-exec-7] o.a.coyote.http11.Http11InputBuffer      : Received [GET /game?game_name=starcraft HTTP/1.1
+x-forwarded-host: localhost:3000
+x-forwarded-proto: http
+x-forwarded-port: 3000
+x-forwarded-for: 127.0.0.1
+cookie: JSESSIONID=8521DB6E5C72F94E6B469884F97C762A
+accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+accept-encoding: gzip, deflate, br
+referer: http://localhost:3000/
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-origin
+accept: */*
+sec-ch-ua-platform: "Windows"
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+sec-ch-ua-mobile: ?0
+sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"
+connection: close
+host: localhost:8080
+
+]
+2023-02-07T20:27:55.168-08:00 TRACE 24556 --- [http-nio-8080-exec-7] o.s.w.r.f.client.ExchangeFunctions       : [333fa194] HTTP POST https://id.twitch.tv/oauth2/token, headers={masked}
+2023-02-07T20:27:56.848-08:00 TRACE 24556 --- [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [333fa194] [614a0fea-1] Response 200 OK, headers={masked}
+2023-02-07T20:27:56.883-08:00 TRACE 24556 --- [http-nio-8080-exec-7] o.s.w.r.f.client.ExchangeFunctions       : [4bc2331f] HTTP GET https://api.twitch.tv/helix/games/?name=starcraft, headers={masked}
+2023-02-07T20:27:57.064-08:00 TRACE 24556 --- [reactor-http-nio-3] o.s.w.r.f.client.ExchangeFunctions       : [4bc2331f] [4f7ded9b-1] Response 200 OK, headers={masked}
+2023-02-07T20:27:57.087-08:00 DEBUG 24556 --- [http-nio-8080-exec-8] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [713]
+2023-02-07T20:27:57.087-08:00 DEBUG 24556 --- [http-nio-8080-exec-8] o.a.coyote.http11.Http11InputBuffer      : Received [GET /search?game_id=11989 HTTP/1.1
+x-forwarded-host: localhost:3000
+x-forwarded-proto: http
+x-forwarded-port: 3000
+x-forwarded-for: 127.0.0.1
+cookie: JSESSIONID=8521DB6E5C72F94E6B469884F97C762A
+accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+accept-encoding: gzip, deflate, br
+referer: http://localhost:3000/
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-origin
+accept: */*
+sec-ch-ua-platform: "Windows"
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+sec-ch-ua-mobile: ?0
+sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"
+connection: close
+host: localhost:8080
+
+]
+2023-02-07T20:27:57.094-08:00 TRACE 24556 --- [http-nio-8080-exec-8] o.s.w.r.f.client.ExchangeFunctions       : [4ceb1076] HTTP GET https://api.twitch.tv/helix/videos/?game_id=11989&first=20, headers={masked}
+2023-02-07T20:27:57.224-08:00 TRACE 24556 --- [reactor-http-nio-3] o.s.w.r.f.client.ExchangeFunctions       : [4ceb1076] [4f7ded9b-2] Response 200 OK, headers={masked}
+2023-02-07T20:27:57.241-08:00 TRACE 24556 --- [http-nio-8080-exec-8] o.s.w.r.f.client.ExchangeFunctions       : [11424b27] HTTP GET https://api.twitch.tv/helix/clips/?game_id=11989&first=20, headers={masked}
+2023-02-07T20:27:57.404-08:00 TRACE 24556 --- [reactor-http-nio-3] o.s.w.r.f.client.ExchangeFunctions       : [11424b27] [4f7ded9b-3] Response 200 OK, headers={masked}
+2023-02-07T20:27:57.415-08:00 TRACE 24556 --- [http-nio-8080-exec-8] o.s.w.r.f.client.ExchangeFunctions       : [1d47ec2b] HTTP GET https://api.twitch.tv/helix/streams/?game_id=11989&first=20, headers={masked}
+2023-02-07T20:27:57.530-08:00 TRACE 24556 --- [reactor-http-nio-3] o.s.w.r.f.client.ExchangeFunctions       : [1d47ec2b] [4f7ded9b-4] Response 200 OK, headers={masked}
+2023-02-07T20:28:25.056-08:00 DEBUG 24556 --- [http-nio-8080-exec-10] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [709]
+2023-02-07T20:28:25.057-08:00 DEBUG 24556 --- [http-nio-8080-exec-10] o.a.coyote.http11.Http11InputBuffer      : Received [GET /game?game_name=starcraft HTTP/1.1
+x-forwarded-host: localhost:3000
+x-forwarded-proto: http
+x-forwarded-port: 3000
+x-forwarded-for: 127.0.0.1
+cookie: JSESSIONID=8521DB6E5C72F94E6B469884F97C762A
+accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+accept-encoding: gzip, deflate, br
+referer: http://localhost:3000/
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-origin
+accept: */*
+sec-ch-ua-platform: "Windows"
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+sec-ch-ua-mobile: ?0
+sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"
+connection: close
+host: localhost:8080
+
+]
+2023-02-07T20:28:25.304-08:00 DEBUG 24556 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [713]
+2023-02-07T20:28:25.305-08:00 DEBUG 24556 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Received [GET /search?game_id=11989 HTTP/1.1
+x-forwarded-host: localhost:3000
+x-forwarded-proto: http
+x-forwarded-port: 3000
+x-forwarded-for: 127.0.0.1
+cookie: JSESSIONID=8521DB6E5C72F94E6B469884F97C762A
+accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+accept-encoding: gzip, deflate, br
+referer: http://localhost:3000/
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-origin
+accept: */*
+sec-ch-ua-platform: "Windows"
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+sec-ch-ua-mobile: ?0
+sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"
+connection: close
+host: localhost:8080
+
+]
+2023-02-07T20:30:05.928-08:00 DEBUG 24556 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [709]
+2023-02-07T20:30:05.930-08:00 DEBUG 24556 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Received [GET /game HTTP/1.1
+x-forwarded-host: localhost:3000
+x-forwarded-proto: http
+x-forwarded-port: 3000
+x-forwarded-for: 127.0.0.1
+cookie: JSESSIONID=8521DB6E5C72F94E6B469884F97C762A
+accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+accept-encoding: gzip, deflate, br
+referer: http://localhost:3000/
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-origin
+accept: */*
+sec-ch-ua-platform: "Windows"
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+sec-ch-ua-mobile: ?0
+sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"
+connection: close
+host: localhost:8080
+
+]
+2023-02-07T20:30:05.937-08:00 TRACE 24556 --- [http-nio-8080-exec-2] o.s.w.r.f.client.ExchangeFunctions       : [3dbec1ed] HTTP GET https://api.twitch.tv/helix/games/top, headers={masked}
+2023-02-07T20:30:05.981-08:00 TRACE 24556 --- [reactor-http-nio-3] o.s.w.r.f.client.ExchangeFunctions       : [3dbec1ed] [4f7ded9b-5] Response 200 OK, headers={masked}
+2023-02-07T20:30:11.074-08:00 DEBUG 24556 --- [http-nio-8080-exec-4] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [693]
+2023-02-07T20:30:11.075-08:00 DEBUG 24556 --- [http-nio-8080-exec-4] o.a.coyote.http11.Http11InputBuffer      : Received [GET /game HTTP/1.1
+x-forwarded-host: localhost:3000
+x-forwarded-proto: http
+x-forwarded-port: 3000
+x-forwarded-for: 127.0.0.1
+cookie: JSESSIONID=8521DB6E5C72F94E6B469884F97C762A
+accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+accept-encoding: gzip, deflate, br
+referer: http://localhost:3000/
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-origin
+accept: */*
+sec-ch-ua-platform: "Windows"
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+sec-ch-ua-mobile: ?0
+sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"
+connection: close
+host: localhost:8080
+
+]
+2023-02-07T20:47:05.034-08:00 DEBUG 24556 --- [http-nio-8080-exec-5] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [693]
+2023-02-07T20:47:05.035-08:00 DEBUG 24556 --- [http-nio-8080-exec-5] o.a.coyote.http11.Http11InputBuffer      : Received [POST /register HTTP/1.1
+x-forwarded-host: localhost:3000
+x-forwarded-proto: http
+x-forwarded-port: 3000
+x-forwarded-for: 127.0.0.1
+cookie: JSESSIONID=8521DB6E5C72F94E6B469884F97C762A
+accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+accept-encoding: gzip, deflate, br
+referer: http://localhost:3000/
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-origin
+origin: http://localhost:8080/
+accept: */*
+content-type: application/json
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"
+content-length: 74
+connection: close
+host: localhost:8080
+
+{"username":" ","password":" ","first_name":"ä½ ç¹","last_name":"ä½ ç·"}]
+2023-02-07T20:47:05.111-08:00 ERROR 24556 --- [http-nio-8080-exec-5] c.s.t.GlobalControllerExceptionHandler   : 
+
+java.lang.IllegalArgumentException: Username may not be empty or null
+	at org.springframework.util.Assert.hasText(Assert.java:294) ~[spring-core-6.0.3.jar:6.0.3]
+	at org.springframework.security.provisioning.JdbcUserDetailsManager.validateUserDetails(JdbcUserDetailsManager.java:553) ~[spring-security-core-6.0.1.jar:6.0.1]
+	at org.springframework.security.provisioning.JdbcUserDetailsManager.createUser(JdbcUserDetailsManager.java:203) ~[spring-security-core-6.0.1.jar:6.0.1]
+	at com.septim.twitchapp.user.UserService.register(UserService.java:29) ~[main/:na]
+	at com.septim.twitchapp.user.UserController.register(UserController.java:23) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-6.0.3.jar:6.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.3.jar:6.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.3.jar:6.0.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.3.jar:6.0.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080) ~[spring-webmvc-6.0.3.jar:6.0.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973) ~[spring-webmvc-6.0.3.jar:6.0.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1010) ~[spring-webmvc-6.0.3.jar:6.0.3]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:913) ~[spring-webmvc-6.0.3.jar:6.0.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731) ~[tomcat-embed-core-10.1.4.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:884) ~[spring-webmvc-6.0.3.jar:6.0.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814) ~[tomcat-embed-core-10.1.4.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:351) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-02-07T20:47:36.997-08:00 DEBUG 24556 --- [http-nio-8080-exec-3] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [782]
+2023-02-07T20:47:36.997-08:00 DEBUG 24556 --- [http-nio-8080-exec-3] o.a.coyote.http11.Http11InputBuffer      : Received [POST /register HTTP/1.1
+x-forwarded-host: localhost:3000
+x-forwarded-proto: http
+x-forwarded-port: 3000
+x-forwarded-for: 127.0.0.1
+cookie: JSESSIONID=8521DB6E5C72F94E6B469884F97C762A
+accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+accept-encoding: gzip, deflate, br
+referer: http://localhost:3000/
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-origin
+origin: http://localhost:8080/
+accept: */*
+content-type: application/json
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"
+content-length: 64
+connection: close
+host: localhost:8080
+
+{"username":" ","password":" ","first_name":" ","last_name":" "}]
+2023-02-07T20:47:37.065-08:00 ERROR 24556 --- [http-nio-8080-exec-3] c.s.t.GlobalControllerExceptionHandler   : 
+
+java.lang.IllegalArgumentException: Username may not be empty or null
+	at org.springframework.util.Assert.hasText(Assert.java:294) ~[spring-core-6.0.3.jar:6.0.3]
+	at org.springframework.security.provisioning.JdbcUserDetailsManager.validateUserDetails(JdbcUserDetailsManager.java:553) ~[spring-security-core-6.0.1.jar:6.0.1]
+	at org.springframework.security.provisioning.JdbcUserDetailsManager.createUser(JdbcUserDetailsManager.java:203) ~[spring-security-core-6.0.1.jar:6.0.1]
+	at com.septim.twitchapp.user.UserService.register(UserService.java:29) ~[main/:na]
+	at com.septim.twitchapp.user.UserController.register(UserController.java:23) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-6.0.3.jar:6.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.3.jar:6.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.3.jar:6.0.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.3.jar:6.0.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080) ~[spring-webmvc-6.0.3.jar:6.0.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973) ~[spring-webmvc-6.0.3.jar:6.0.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1010) ~[spring-webmvc-6.0.3.jar:6.0.3]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:913) ~[spring-webmvc-6.0.3.jar:6.0.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731) ~[tomcat-embed-core-10.1.4.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:884) ~[spring-webmvc-6.0.3.jar:6.0.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814) ~[tomcat-embed-core-10.1.4.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.0.1.jar:6.0.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:351) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-02-07T20:48:16.592-08:00 DEBUG 24556 --- [http-nio-8080-exec-6] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [782]
+2023-02-07T20:48:16.592-08:00 DEBUG 24556 --- [http-nio-8080-exec-6] o.a.coyote.http11.Http11InputBuffer      : Received [POST /register HTTP/1.1
+x-forwarded-host: localhost:3000
+x-forwarded-proto: http
+x-forwarded-port: 3000
+x-forwarded-for: 127.0.0.1
+cookie: JSESSIONID=8521DB6E5C72F94E6B469884F97C762A
+accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+accept-encoding: gzip, deflate, br
+referer: http://localhost:3000/
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-origin
+origin: http://localhost:8080/
+accept: */*
+content-type: application/json
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"
+content-length: 76
+connection: close
+host: localhost:8080
+
+{"username":"vent0s","password":" ","first_name":"ææ","last_name":"æ"}]
+2023-02-07T20:48:16.664-08:00 DEBUG 24556 --- [http-nio-8080-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2023-02-07T20:48:16.665-08:00 DEBUG 24556 --- [http-nio-8080-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [insert into users (username, password, enabled) values (?,?,?)]
+2023-02-07T20:48:16.674-08:00 DEBUG 24556 --- [http-nio-8080-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2023-02-07T20:48:16.674-08:00 DEBUG 24556 --- [http-nio-8080-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [insert into authorities (username, authority) values (?,?)]
+2023-02-07T20:48:16.680-08:00 DEBUG 24556 --- [http-nio-8080-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2023-02-07T20:48:16.680-08:00 DEBUG 24556 --- [http-nio-8080-exec-6] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [UPDATE users SET first_name = ?, last_name = ? WHERE username = ?]
+2023-02-07T21:11:26.930-08:00  INFO 24556 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-07T21:11:26.975-08:00  INFO 24556 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
