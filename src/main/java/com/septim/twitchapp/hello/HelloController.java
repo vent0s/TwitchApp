@@ -10,10 +10,6 @@ import java.util.Locale;
 
 @RestController
 public class HelloController {
-    @GetMapping("/")
-    public String mainPage(){
-        return "HELLO";
-    }
 
     @GetMapping("/hello")
     public Person person(@RequestParam(required = false) String locale){

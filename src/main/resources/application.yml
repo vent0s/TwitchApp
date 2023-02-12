@@ -12,6 +12,9 @@ spring:
       schema-locations: "classpath:database-init.sql"
   jackson:
     default-property-inclusion: non_null
+    deserialization:
+      failOnUnknownProperties: false
+
   datasource:
     url: jdbc:mysql://${DATABASE_URL:localhost}:3306/twitch?createDatabaseIfNotExist=true
     username: ${DATABASE_USERNAME:root}

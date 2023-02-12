@@ -77,7 +77,7 @@ public class AppConfig {
                                 .requestMatchers(HttpMethod.GET, "/", "/index.html", "/*.json", "/*.png", "/static/**").permitAll()
                                 .requestMatchers("/hello/**").permitAll()
                                 .requestMatchers(HttpMethod.POST, "/login", "/register", "/logout").permitAll()
-                                .requestMatchers(HttpMethod.GET, "/recommendation", "/game").permitAll()
+                                .requestMatchers(HttpMethod.GET, "/recommendation", "/game","/search").permitAll()
                                 .anyRequest().authenticated()
                 )
                 .exceptionHandling()

@@ -23,7 +23,7 @@ public class FavoriteService {
         this.favoriteRecordRepository = favoriteRecordRepository;
     }
 
-    @CacheEvict(cacheNames = "recommend_items", key = "#root.arts[0]")
+    @CacheEvict(cacheNames = "recommend_items", key = "#root.args[0]")
     @Transactional
     public void setFavoriteItem(UserEntity user, ItemEntity item) {
         ItemEntity persistedItem = itemRepository.findByTwitchId(item.twitchId());
